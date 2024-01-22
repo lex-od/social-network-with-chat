@@ -1,7 +1,7 @@
-import { Sun, Users } from "lucide-react";
+import { MessageCircleMore, Settings, Sun, Users } from "lucide-react";
 import Image from "next/image";
-import css from "./Sidebar.module.scss";
 import Link from "next/link";
+import css from "./Sidebar.module.scss";
 
 export function Sidebar() {
   <aside className={css.sidebar}>
@@ -11,6 +11,16 @@ export function Sidebar() {
       <li>
         <Link href="/users">
           <Users />
+        </Link>
+      </li>
+      <li>
+        <Link href="/chats">
+          <MessageCircleMore />
+        </Link>
+      </li>
+      <li>
+        <Link href="/settings">
+          <Settings />
         </Link>
       </li>
     </ul>
