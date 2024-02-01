@@ -5,7 +5,7 @@ import css from "./Sidebar.module.scss";
 
 export function Sidebar() {
   <aside className={css.sidebar}>
-    <Image src="/icons/my-social.svg" alt="My Social" width={50} height={61} />
+    <Image src="/icons/logo.svg" alt="My Social" width={50} height={61} />
 
     <ul>
       <li>
