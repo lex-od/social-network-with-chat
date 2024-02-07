@@ -29,3 +29,14 @@ export default function RootLayout({
     </html>
   );
 }
+
+// Light / dark theme icon example
+// icons: {
+//   icon: [
+//     { url: "/icons/logo-light-theme.svg" },
+//     {
+//       url: "/icons/logo-dark-theme.svg",
+//       media: "(prefers-color-scheme: dark)",
+//     },
+//   ],
+// }
