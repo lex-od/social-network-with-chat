@@ -6,7 +6,7 @@ import css from "./Sidebar.module.scss";
 const Sidebar = () => {
   return (
     <aside className={css.sidebar}>
-      <Image src="/icons/logo.svg" alt="Logo" width={50} height={50} />
+      <Image src="/icons/logo.svg" alt="Logo" width={50} height={50} priority />
 
       <ul>
         <li>
