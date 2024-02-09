@@ -8,7 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      //
+      gridTemplateColumns: {
+        "root-layout": "70px 1fr",
+      },
     },
   },
   plugins: [],
