@@ -5,28 +5,30 @@ import css from "./Sidebar.module.scss";
 
 const Sidebar = () => {
   return (
-    <aside className={css.sidebar}>
-      <Image src="/icons/logo.svg" alt="Logo" width={50} height={50} priority />
+    <aside className="py-5 flex flex-col justify-between items-center border-r border-r-white/15">
+      <Image src="/icons/logo.svg" alt="Logo" width={32} height={32} priority />
 
-      <ul>
+      <ul className="space-y-12">
         <li>
-          <Link href="/users">
-            <Users />
+          <Link className={css.iconButton} href="/users">
+            <Users size={28} />
           </Link>
         </li>
         <li>
-          <Link href="/chats">
-            <MessageCircleMore />
+          <Link className={css.iconButton} href="/chats">
+            <MessageCircleMore size={28} />
           </Link>
         </li>
         <li>
-          <Link href="/settings">
-            <Settings />
+          <Link className={css.iconButton} href="/settings">
+            <Settings size={28} />
           </Link>
         </li>
       </ul>
 
-      <Sun />
+      <button className={css.iconButton}>
+        <Sun size={28} />
+      </button>
     </aside>
   );
 };

@@ -1,3 +1,7 @@
-.sidebar {
-  @apply flex flex-col justify-between items-center border-r border-r-white/15;
+.iconButton {
+  @apply text-neutral-400 hover:text-white;
+
+  svg {
+    @apply transition-colors duration-300;
+  }
 }
