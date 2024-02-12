@@ -6,8 +6,8 @@ import "./globals.scss";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Social network with chat",
-  description: "Social network app description",
+  title: "Taiga Social",
+  description: "App description",
   icons: "/icons/logo.svg",
 };
 

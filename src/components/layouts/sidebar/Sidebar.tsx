@@ -15,7 +15,7 @@ const Sidebar = () => {
           </Link>
         </li>
         <li>
-          <Link className={css.iconButton} href="/chats">
+          <Link className={css.iconButton} href="/">
             <MessageCircleMore size={28} />
           </Link>
         </li>
