@@ -4,4 +4,8 @@
   svg {
     @apply transition-colors duration-300;
   }
+
+  &:global(.current) {
+    @apply text-white;
+  }
 }

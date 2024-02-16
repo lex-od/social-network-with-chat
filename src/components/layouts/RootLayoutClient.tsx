@@ -1,5 +1,5 @@
 import { FC, PropsWithChildren } from "react";
-import Sidebar from "./sidebar/Sidebar";
+import Sidebar from "./Sidebar1/Sidebar";
 
 const RootLayoutClient: FC<PropsWithChildren> = ({ children }) => {
   return (
