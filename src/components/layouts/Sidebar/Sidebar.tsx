@@ -1,15 +1,14 @@
-import { headers } from "next/headers";
+"use client";
 import { Sun } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import clsx from "clsx";
 import css from "./Sidebar.module.scss";
 import { NAV_LIST } from "./Sidebar.data";
 
 const Sidebar = () => {
-  const headerList = headers();
-  const headerUrl = headerList.get("referer");
-  const currentUrl = "/" + headerUrl?.split("/").slice(3).join("/");
+  const pathname = usePathname();
 
   return (
     <aside className="py-5 flex flex-col justify-between items-center border-r border-r-white/15">
@@ -21,7 +20,7 @@ const Sidebar = () => {
             <li key={navItem.url}>
               <Link
                 className={clsx(css.iconButton, {
-                  current: false,
+                  current: navItem.url === pathname,
                 })}
                 href={navItem.url}
                 title={navItem.title}
