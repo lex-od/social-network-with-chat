@@ -11,7 +11,7 @@ const Sidebar = () => {
   const pathname = usePathname();
 
   return (
-    <aside className="py-5 flex flex-col justify-between items-center border-r border-r-white/15">
+    <aside className="row-start-1 row-span-2 py-5 flex flex-col justify-between items-center border-r border-r-white/15">
       <Image src="/icons/logo.svg" alt="Logo" width={32} height={32} priority />
 
       <nav>
