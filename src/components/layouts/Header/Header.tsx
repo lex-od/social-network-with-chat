@@ -2,10 +2,9 @@ import CurrentUser from "./_CurrentUser";
 
 const Header = () => {
   return (
-    <div className="grid grid-cols-[200px_1fr_200px]">
+    <div className="grid grid-cols-[200px_1fr]">
       <CurrentUser />
-      <div>ChatTitle</div>
-      <div>HeaderActions</div>
+      <div className="p-4">ChatTitle</div>
     </div>
   );
 };
