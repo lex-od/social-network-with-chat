@@ -1,7 +1,7 @@
 import { Metadata } from "next";
-import Chat from "@/components/screens/ChatsPage/Chat/Chat";
-import ChatList from "@/components/screens/ChatsPage/ChatList/ChatList";
-import CurrentUser from "@/components/layouts/CurrentUser";
+import CurrentUser from "@/components/CurrentUser";
+import Chat from "@/screens/ChatsPage/Chat/Chat";
+import ChatList from "@/screens/ChatsPage/ChatList/ChatList";
 
 export const metadata: Metadata = {
   title: "Chats | Taiga Social",
