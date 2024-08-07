@@ -1,0 +1,10 @@
+.formInput {
+  @apply flex gap-3 items-center relative;
+
+  &:focus-within,
+  &:hover {
+    svg {
+      @apply text-white;
+    }
+  }
+}
