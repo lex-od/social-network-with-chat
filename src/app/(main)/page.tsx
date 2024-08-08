@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import CurrentUser from "@/components/CurrentUser";
+import CurrentUser from "@/components/molecules/CurrentUser";
 import Chat from "@/screens/ChatsPage/Chat/Chat";
 import ChatList from "@/screens/ChatsPage/ChatList/ChatList";
 
