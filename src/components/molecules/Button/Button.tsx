@@ -6,7 +6,14 @@ export type ButtonProps = {
 } & JSX.IntrinsicElements["button"];
 
 const Button: FC<ButtonProps> = ({ isLoading, children, ...buttonProps }) => {
-  return <button {...buttonProps}>{isLoading ? <Loader /> : children}</button>;
+  return (
+    <button
+      className="inline-flex justify-center min-w-24 py-2 px-5 align-middle bg-violet-500 rounded-xl transition-colors duration-300 hover:bg-violet-500/80"
+      {...buttonProps}
+    >
+      {isLoading ? <Loader /> : children}
+    </button>
+  );
 };
 
 export default Button;
