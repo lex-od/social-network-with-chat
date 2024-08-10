@@ -9,10 +9,10 @@ interface AuthFormProps {
 }
 
 const AuthForm: FC<AuthFormProps> = ({ type }) => {
-  const title = "login" ? "Login" : "Register";
+  const title = type === "login" ? "Login" : "Register";
 
   return (
-    <form>
+    <form className="p-4 border border-white/15">
       <h1>{title}</h1>
 
       <FormInput placeholder="Enter email" Icon={AtSign} />

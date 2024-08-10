@@ -5,3 +5,7 @@
 body {
   @apply h-screen text-zinc-100 bg-gradient-to-tr from-stone-950 to-stone-700;
 }
+
+h1 {
+  @apply text-2xl font-semibold;
+}
